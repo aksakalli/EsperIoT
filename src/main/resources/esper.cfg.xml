@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esper-configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xmlns="http://www.espertech.com/schema/esper"
+                     xsi:schemaLocation="
+http://www.espertech.com/schema/esper
+http://www.espertech.com/schema/esper/esper-configuration-2.0.xsd">
+    <event-type name="SimpleEvent" class="org.esperiot.event.SimpleEvent"/>
+
+    <engine-settings>
+        <defaults>
+            <metrics-reporting enabled="true" engine-interval="1000" statement-interval="1000" threading="true"/>
+        </defaults>
+    </engine-settings>
+</esper-configuration>

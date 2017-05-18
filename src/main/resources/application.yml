@@ -1,0 +1,15 @@
+server:
+    port: 8080
+
+
+swagger:
+    title: EsperIoT
+    description: Esper IoT with MQTT
+    version: 0.0.1
+    termsOfServiceUrl: https://github.com/aksakalli/esperiot/
+    contact: Can Guney Aksakalli
+    license: GNU Public License v2.0
+    licenseUrl: https://github.com/aksakalli/esperiot/blob/master/LICENSE
+
+mqtt:
+    serverURI: tcp://localhost:1883
