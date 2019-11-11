@@ -23,6 +23,23 @@ In EPL:
 * Tables → Event Streams, Views
 * Rows → Events
 
+# How to run
+
+You need a MQTT server running and
+the easiest way to start one is Docker.
+
+```
+docker run --rm -it -p 1883:1883 eclipse-mosquitto
+```
+
+Now you can run EsperIoT:
+
+```
+./mvnw spring-boot:run -Drun.arguments=--mqtt.serverURI=tcp://127.0.0.1:1883
+```
+
+Go to the [Swagger UI](http://localhost:8080/swagger-ui.html) to explore the REST API.
+
 ## Features
 
 * Spring Rest endpoints to
@@ -41,6 +58,7 @@ In EPL:
 * New endpoints for changing engine configuration
 * Integration Test
 * use better mapper for DTO such as mapstruct
+* Integration test
 
 ## License
 
