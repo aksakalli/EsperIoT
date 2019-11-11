@@ -23,7 +23,7 @@ In EPL:
 * Tables → Event Streams, Views
 * Rows → Events
 
-# How to run
+## How to run
 
 You need a MQTT server running and
 the easiest way to start one is Docker.
