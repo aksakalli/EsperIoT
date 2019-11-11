@@ -1,7 +1,12 @@
 language: java
 jdk:
-  - oraclejdk8
-  - oraclejdk9
   - openjdk8
+services:
+  - docker
+before_script:
+  - docker run -d -p 1883:1883 eclipse-mosquitto
+  - docker ps -a
+  - sleep 5
+
 notifications:
   email: false
