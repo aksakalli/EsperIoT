@@ -1,4 +1,4 @@
-# EsperIoT
+# EsperIoT [![Build Status](https://travis-ci.org/aksakalli/EsperIoT.svg)](https://travis-ci.org/aksakalli/EsperIoT)
 
 EsperIoT is an MQTT connector and configuration manager for Esper CEP Engine.
 With EsperIoT, your application can specify any statements and subscribe upcoming results from the engine.
