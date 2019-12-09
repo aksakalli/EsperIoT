@@ -1,0 +1,18 @@
+version: '2.1'
+services:
+    mqtt:
+        image: eclipse-mosquitto
+        ports:
+            - 1883:1883
+
+    esperiot:
+        build: .
+        image: esperiot
+        restart: always
+        depends_on:
+            - mqtt
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - MQTT_SERVERURI=tcp://mqtt:1883
+        ports:
+            - 8080:8080
